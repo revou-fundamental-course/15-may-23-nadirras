@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katik</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h2 class="katik">Katik</h2>
+        <p class="penjelas">Kalkulator Matematik</p>
+    </header>
+    <nav>
+        <h3>Welcome to Katik</h3>
+        <p>
+            Hai Sobat, selamat datang di Katik! 
+        </p>
+        <p>
+            Sebuah web apps sederhana yang bertugas untuk menghitung sisi luas dan keliling bangun datar
+        </p>
+        <div class="luas">
+            <a  href="#luas">
+                Luas
+            </a>
+        </div>
+        <div class="keliling">
+            <a  href="#keliling">Keliling</a>
+        </div>
+    </nav>
+    <section>
+        <!-- Hitung Luas -->
+        <div class="hitung-luas-keliling">
+            <div class="judul-luas-keliling"><p id="luas">Luas Persegi</p></div>
+            <div class="persegi">
+                <div class="huruf"></div>
+                <div class="gambar-persegi"></div>
+            </div>
+            <div class="tulisan-bujur-sangkar">Bujur Sangkar</div>
+            <div class="penjelasan-rumus">
+
+                Rumus luas persegi yaitu: <br>
+                <p class="eq">L = S x S </p>
+                Di mana: <br>
+                L = Luas <br>
+                S = Sisi <br>
+
+            </div>
+            <div class="bottom-luas-persegi">
+                <h2>Hitung Luas Persegi</h2>
+                <div>
+                    <form id="isi-form">
+                        <input id="nilai-sisi" type="text" placeholder="Nilai Sisi" type="number">
+                    </form>
+                </div>
+            
+                <div>
+                    <button onclick="hitungLuas()">Hitung</button>
+                </div>
+                <div class="eq"> L=SXS </div>
+                <div class = isi-rumus>
+                    <div class = "eq"> L </div>
+                    <div class = "eq"> = </div>
+                    <div id = isi-nilai-sisi></div>
+                    <div class = "eq"> x </div>
+                    <div id = isi-nilai-sisi2></div>
+                </div>
+                <div id = isi-nilai-sisi></div>
+                <div class="bagian-hasil">
+                    <!-- <div>L = S X S</div> -->
+                    <div class = "eq">
+                       L= 
+                    </div>
+                    <div id="hasil-hitungan"></div>
+                </div>
+                <div >
+                    <!-- <form>
+                        <input type="button" onclick="tombolReset()" value="Reset form" class="tombol-reset">
+                    </form> -->
+                    <div></div>
+                    <button onclick="tombolReset()" class="tombol-reset">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <!---Hitung Keliling --->
+        <div class="hitung-luas-keliling">
+            <div class="judul-luas-keliling"><p id="keliling">Keliling Persegi</p></div>
+            <div class="persegi">
+                <div class="huruf"></div>
+                <div class="gambar-persegi"></div>
+            </div>
+            <div class="tulisan-bujur-sangkar">Bujur Sangkar</div>
+            <div class="penjelasan-rumus">
+                
+                Rumus keliling persegi yaitu: <br>
+                <p class="eq">K = 4 x S </p>
+                Di mana: <br>
+                K = Keliling <br>
+                S = Sisi <br>
+
+            </div>
+            <div class="bottom-luas-persegi">
+                <h2>Hitung Keliling Persegi</h2>
+                <div>
+                    <form id = "isi-form2">
+                        <input id="nilai-sisi-keliling" type="text" placeholder="Nilai Sisi">
+                    </form>
+                </div>
+            
+                <div>
+                    <button onclick="hitungKeliling()">Hitung</button>
+                </div>
+                <div class = "eq"> K=4xS </div>
+                <div class = isi-rumus>
+                    <div class = "eq"> K </div>
+                    <div class = "eq"> = </div>
+                    <div class = "eq">4</div>
+                    <div class = "eq"> x </div>
+                    <div id = isi-nilai-sisi3></div>
+                </div>
+                <div class="bagian-hasil">
+                    <div class="eq">K= </div>
+                    <div id="hasil-hitungan2"></div>
+                </div>
+                <div >
+                    <button onclick = "tombolReset2()" class="tombol-reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
